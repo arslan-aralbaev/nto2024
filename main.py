@@ -58,10 +58,10 @@ class Example(QWidget):
 
     def calculate(self):
         # здесь проходят все вычисления и вывод результата после нажатия кнопки
-        typw = self.type_of_fiber.currentText()
-        diametr = self.diametr_input.value()
-        print(typw, diametr)
-        self.line_for_answer.setText(str(typw) + ' ' + str(diametr))
+        typw = self.type_of_fiber.currentText()  # берём выбранный тип волокна
+        diametr = self.diametr_input.value()  # снимаем значения диаметра
+
+        self.line_for_answer.setText(str(typw) + ' ' + str(diametr))  # сюда выводить инфу
 
 
 if __name__ == '__main__':
